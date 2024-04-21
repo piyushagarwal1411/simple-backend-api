@@ -9,7 +9,7 @@ def catch_all(path):
 
 @app.route('/sayHello', methods=['GET'])
 def say_hello():
-    return jsonify("Hello User.")
+    return jsonify({"message": "Hello User."})
 
 if __name__ == '__main__':
     app.run(port=80)
