@@ -26,4 +26,4 @@ jobs:
     - name: Deploy to virtual machine
       run: |
         # Use SSH to connect to the VM and run deployment commands
-        ssh -i path/to/your/key.pem azureuser@20.2.219.112 "cd simple-backend-api && git pull origin main && python -m pip install -r requirements.txt && python app.py"
+        ssh -i challengevm2_key_0419.pem azureuser@20.2.219.112 "cd simple-backend-api && git pull origin main && python -m pip install -r requirements.txt && python app.py"
