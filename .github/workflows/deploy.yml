@@ -30,7 +30,7 @@ jobs:
           host: 20.2.219.112
           username: azureuser
           key: ${{ secrets.SSH_KEY }}
-          port: 22
+          port: 80
           script: |
             # Clone the Flask API repository
             git clone https://github.com/piyushagarwal1411/simple-backend-api.git
