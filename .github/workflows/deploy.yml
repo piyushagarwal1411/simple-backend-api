@@ -24,20 +24,6 @@ jobs:
         pip install flask
 
     - name: Deploy to virtual machine
-      uses: appleboy/ssh-action@master
-      with:
-        host: 20.2.219.112
-        username: azureuser
-        key: "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"
-        port: 80
-        script: |
-          # Clone the Flask API repository
-          git clone https://github.com/piyushagarwal1411/simple-backend-api.git
-    
-          # Install the required dependencies
-          cd simple-backend-api
-          python -m pip install -r requirements.txt
-    
-          # Run the Flask app
-          python app.py
-          
+      run: |
+        # Use SSH to connect to the VM and run deployment commands
+        ssh -i path/to/your/key.pem azureuser@20.2.219.112 "cd simple-backend-api && git pull origin main && python -m pip install -r requirements.txt && python app.py"
