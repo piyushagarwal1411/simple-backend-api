@@ -28,7 +28,7 @@ jobs:
       with:
         host: 20.2.219.112
         username: azureuser
-        key: ${{ secrets.SSH_KEY }}
+        key: ${{ secrets.SSH_PVT_KEY }}
         port: 80
         script: |
           # Clone the Flask API repository
